@@ -5,37 +5,337 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <section id="sidebar">
-      <div id="logo"></div>
-      <div id="user-menu-1"></div>
-      <div id="user-menu-2"></div>
-    </section>
-    <section id="header">
-      <div id="header-1"></div>
-      <div id="header-2"></div>
-    </section>
-    <section id="main-content">
-      <div id="your-projects">
-        <div class="projects"></div>
-        <div class="projects"></div>
-        <div class="projects"></div>
-        <div class="projects"></div>
-        <div class="projects"></div>
-        <div class="projects"></div>
-      </div>
-      <div id="announcements">
-        <div class="announcement"></div>
-        <div class="announcement"></div>
-        <div class="announcement"></div>
-      </div>
-      <div id="trending">
-        <div class="trending-user"></div>
-        <div class="trending-user"></div>
-        <div class="trending-user"></div>
-        <div class="trending-user"></div>
-      </div>
-    </section>
-  </body>
+  <div id="wrapper">
+    <body>
+      <section id="sidebar">
+        <div id="logo">
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/dashboard-svgrepo-com.svg"
+            alt="dashboard-icon"
+          />
+          <div>Dashboard</div>
+        </div>
+        <div id="user-menu-1">
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/home-svgrepo-com.svg"
+            alt="home-icon"
+          />
+          <div>Home</div>
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/profile-svgrepo-com.svg"
+            alt="profile-icon"
+          />
+          <div>Profile</div>
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/messages-chat-1557-svgrepo-com.svg"
+            alt="message-icon"
+          />
+          <div>Messages</div>
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/history-round-svgrepo-com.svg"
+            alt="history-icon"
+          />
+          <div>History</div>
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/tasks-badged-svgrepo-com.svg"
+            alt="task-icon"
+          />
+          <div>Tasks</div>
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/people-community-svgrepo-com.svg"
+            alt="communities-icon"
+          />
+          <div>Communities</div>
+        </div>
+        <div id="user-menu-2">
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/settings-svgrepo-com.svg"
+            alt="settings-icon"
+          />
+          <div>Settings</div>
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/support-svgrepo-com.svg"
+            alt="support-icon"
+          />
+          <div>Support</div>
+          <img
+            class="sidebar-icons"
+            src="./assets/dashboard-icons/privacy-tips-svgrepo-com.svg"
+            alt="privacy-icon"
+          />
+          <div>Privacy</div>
+        </div>
+      </section>
+      <section id="header">
+        <div id="header-1">
+          <img
+            class="header-icons"
+            src="./assets/dashboard-icons/search-svgrepo-com.svg"
+            alt="search-icon"
+          />
+          <form action="/search" method="get">
+            <input type="text" name="query" />
+          </form>
+          <img
+            class="header-icons"
+            src="./assets/dashboard-icons/notifications-alert-svgrepo-com.svg"
+            alt="notification-icon"
+          />
+          <img
+            class="avatar-icons"
+            src="./assets/avatar-icons/1.png"
+            alt="avatar-1"
+          />
+          <div>Franco Vacirca</div>
+        </div>
+        <div id="header-2">
+          <img
+            class="big-avatar-icon"
+            src="./assets/avatar-icons/1.png"
+            alt="avatar-1"
+          />
+          <div id="hi-there">Hi there,</div>
+          <div id="username-name">Franco Vacirca (@franv)</div>
+          <div class="header-buttons">New</div>
+          <div class="header-buttons">Upload</div>
+          <div class="header-buttons">Share</div>
+        </div>
+      </section>
+      <section id="main-content">
+        <div id="your-projects">
+          <div>Your Projects</div>
+          <div class="projects">
+            <div>Super Cool Project</div>
+            <div class="lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+              reiciendis sequi expedita, fuga reprehenderit, ad nisi non ipsa
+              laudantium quis atque harum! Vel, sapiente vero reprehenderit
+              quasi accusamus commodi laudantium?
+            </div>
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/favorite-svgrepo-com.svg"
+              alt="favorite-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/eye-plus-svgrepo-com.svg"
+              alt="eye-plus-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/share-3-svgrepo-com.svg"
+              alt="share-icon"
+            />
+          </div>
+          <div class="projects">
+            <div>Less Cool Project</div>
+            <div class="lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              sequi sit culpa consequatur fugiat accusantium debitis officiis
+              asperiores dicta, assumenda quisquam et ullam. Eaque, esse culpa
+              excepturi ex dolore totam.
+            </div>
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/favorite-svgrepo-com.svg"
+              alt="favorite-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/eye-plus-svgrepo-com.svg"
+              alt="eye-plus-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/share-3-svgrepo-com.svg"
+              alt="share-icon"
+            />
+          </div>
+          <div class="projects">
+            <div>Impossible App</div>
+            <div class="lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              ab facilis molestias nobis dolorum tempora quas reiciendis a! Sint
+              labore molestiae suscipit nihil similique eligendi nostrum magnam
+              qui minus accusantium?
+            </div>
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/favorite-svgrepo-com.svg"
+              alt="favorite-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/eye-plus-svgrepo-com.svg"
+              alt="eye-plus-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/share-3-svgrepo-com.svg"
+              alt="share-icon"
+            />
+          </div>
+          <div class="projects">
+            <div>Easy Peasy App</div>
+            <div class="lorem">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+              fugiat exercitationem dolores minima inventore dolor ratione hic,
+              soluta expedita consectetur aut? Quisquam natus similique
+              accusamus itaque ad sed quae ipsa?
+            </div>
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/favorite-svgrepo-com.svg"
+              alt="favorite-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/eye-plus-svgrepo-com.svg"
+              alt="eye-plus-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/share-3-svgrepo-com.svg"
+              alt="share-icon"
+            />
+          </div>
+          <div class="projects">
+            <div>Ad Blocker</div>
+            <div class="lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quis
+              modi facere soluta a pariatur quo sunt, iste doloremque inventore,
+              tenetur, eius nisi ullam fugit vero itaque excepturi tempora quam.
+            </div>
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/favorite-svgrepo-com.svg"
+              alt="favorite-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/eye-plus-svgrepo-com.svg"
+              alt="eye-plus-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/share-3-svgrepo-com.svg"
+              alt="share-icon"
+            />
+          </div>
+          <div class="projects">
+            <div>Money Maker</div>
+            <div class="lorem">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias pariatur odio eum nesciunt earum numquam ad sint iusto
+              officiis? Aperiam, nisi a. Aperiam assumenda hic minus ut ex
+              architecto corporis.
+            </div>
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/favorite-svgrepo-com.svg"
+              alt="favorite-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/eye-plus-svgrepo-com.svg"
+              alt="eye-plus-icon"
+            />
+            <img
+              class="project-icons"
+              src="./assets/dashboard-icons/share-3-svgrepo-com.svg"
+              alt="share-icon"
+            />
+          </div>
+        </div>
+        <div id="announcements-trending">
+          <div id="announcements">
+            <div>Announcement</div>
+            <div class="announcement">
+              <div>Site Maintenance</div>
+              <div class="lorem">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                adipisci iusto dolorum? Veritatis aperiam a accusantium beatae
+                eos optio. Veritatis rerum saepe incidunt ut doloremque, sunt
+                soluta sequi ex corrupti.
+              </div>
+            </div>
+            <div class="announcement">
+              <div>Community Share Day</div>
+              <div class="lorem">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Reprehenderit, eaque cum culpa dicta beatae provident nulla
+                magni rem ab repellat eveniet totam voluptates illo fuga id
+                maxime sequi cumque ducimus?
+              </div>
+            </div>
+            <div class="announcement">
+              <div>Upload Privacy Policy</div>
+              <div class="lorem">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolores, perspiciatis sint voluptatibus quam nemo explicabo
+                inventore ratione saepe officia temporibus! Repellat similique
+                sequi modi qui quidem quisquam vitae aliquid reprehenderit.
+              </div>
+            </div>
+          </div>
+          <div id="trending">
+            <div>trending</div>
+            <div class="trending-user">
+              <img
+                class="avatar-icons"
+                src="./assets/avatar-icons/2.png"
+                alt="avatar-icon"
+              />
+              <div>@tegan</div>
+              <div class="project-title">World Peace Builder</div>
+            </div>
+            <div class="trending-user">
+              <img
+                class="avatar-icons"
+                src="./assets/avatar-icons/1.png"
+                alt="avatar-icon"
+              />
+              <div>@francov</div>
+              <div class="project-title">Super Cool Project</div>
+            </div>
+            <div class="trending-user">
+              <img
+                class="avatar-icons"
+                src="./assets/avatar-icons/3.png"
+                alt="avatar-icon"
+              />
+              <div>@kendall</div>
+              <div class="project-title">Life Changing App</div>
+            </div>
+            <div class="trending-user">
+              <img
+                class="avatar-icons"
+                src="./assets/avatar-icons/4.png"
+                alt="avatar-icon"
+              />
+              <div>@alex</div>
+              <div class="project-title">No Traffic Maker</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+  </div>
 </html>
