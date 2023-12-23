@@ -162,14 +162,18 @@ form {
     display: flex;
 }
 
-input[type="text"],
-input[type="submit"] {
+#header-search {
+    display: flex;
+}
+
+#search-field,
+.search-input {
     border: none;
     outline: none;
     border-radius: 10px;
     background-color: #e2e8f0;
-    width: 25rem;
     height: 1.3rem;
+    flex: 1;
 }
 
 .lorem,
@@ -244,18 +248,28 @@ body {
 }
 
 #header-search {
+    flex-grow: 1;
     display: flex;
     justify-content: flex-start;
-    flex-grow: 1;
+    align-items: center;
     gap: 1rem;
     padding-left: 1.5rem;
+}
+
+input#search-field {
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #e2e8f0;
+    height: 1.3rem;
 }
 
 #header-notification {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 #header-2 {
@@ -295,29 +309,4 @@ body {
     border-radius: 20px;
     height: 1.8rem;
     width: 4.5rem;
-}
-
-#main-content {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-
-#your-projects {
-    display: grid;
-    grid-row: 1 / 4;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-#title-your-projects {
-    grid-column: 1 / 3;
-}
-
-.project-icons img {
-    display: flex;
-}
-
-#trending {
-    display: grid;
-    grid-column: 2 / 3;
 }
