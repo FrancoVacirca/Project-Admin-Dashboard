@@ -17,6 +17,7 @@
       <section id="sidebar">
         <div id="logo">
           <img
+            id="dashboard-logo"
             class="sidebar-icons"
             src="./assets/dashboard-icons/dashboard-svgrepo-com.svg"
             alt="dashboard-icon"
@@ -24,102 +25,131 @@
           <div>Dashboard</div>
         </div>
         <div id="user-menu-1">
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/home-svgrepo-com.svg"
-            alt="home-icon"
-          />
-          <div>Home</div>
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/profile-svgrepo-com.svg"
-            alt="profile-icon"
-          />
-          <div>Profile</div>
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/messages-chat-1557-svgrepo-com.svg"
-            alt="message-icon"
-          />
-          <div>Messages</div>
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/history-round-svgrepo-com.svg"
-            alt="history-icon"
-          />
-          <div>History</div>
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/tasks-badged-svgrepo-com.svg"
-            alt="task-icon"
-          />
-          <div>Tasks</div>
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/people-community-svgrepo-com.svg"
-            alt="communities-icon"
-          />
-          <div>Communities</div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/home-svgrepo-com.svg"
+              alt="home-icon"
+            />
+            <div>Home</div>
+          </div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/profile-svgrepo-com.svg"
+              alt="profile-icon"
+            />
+            <div>Profile</div>
+          </div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/messages-chat-1557-svgrepo-com.svg"
+              alt="message-icon"
+            />
+            <div>Messages</div>
+          </div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/history-round-svgrepo-com.svg"
+              alt="history-icon"
+            />
+            <div>History</div>
+          </div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/tasks-badged-svgrepo-com.svg"
+              alt="task-icon"
+            />
+            <div>Tasks</div>
+          </div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/people-community-svgrepo-com.svg"
+              alt="communities-icon"
+            />
+            <div>Communities</div>
+          </div>
         </div>
         <div id="user-menu-2">
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/settings-svgrepo-com.svg"
-            alt="settings-icon"
-          />
-          <div>Settings</div>
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/support-svgrepo-com.svg"
-            alt="support-icon"
-          />
-          <div>Support</div>
-          <img
-            class="sidebar-icons"
-            src="./assets/dashboard-icons/privacy-tips-svgrepo-com.svg"
-            alt="privacy-icon"
-          />
-          <div>Privacy</div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/settings-svgrepo-com.svg"
+              alt="settings-icon"
+            />
+            <div>Settings</div>
+          </div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/support-svgrepo-com.svg"
+              alt="support-icon"
+            />
+            <div>Support</div>
+          </div>
+          <div class="menu-wrapper">
+            <img
+              class="sidebar-icons"
+              src="./assets/dashboard-icons/privacy-tips-svgrepo-com.svg"
+              alt="privacy-icon"
+            />
+            <div>Privacy</div>
+          </div>
         </div>
       </section>
       <section id="header">
         <div id="header-1">
-          <img
-            class="header-icons"
-            src="./assets/dashboard-icons/search-svgrepo-com.svg"
-            alt="search-icon"
-          />
-          <form action="/search" method="get">
-            <input type="text" name="query" />
-          </form>
-          <img
-            class="header-icons"
-            src="./assets/dashboard-icons/notifications-alert-svgrepo-com.svg"
-            alt="notification-icon"
-          />
-          <img
-            class="avatar-icons"
-            src="./assets/avatar-icons/1.png"
-            alt="avatar-1"
-          />
-          <div>Franco Vacirca</div>
+          <div id="header-search">
+            <img
+              class="header-icons"
+              src="./assets/dashboard-icons/search-svgrepo-com.svg"
+              alt="search-icon"
+            />
+            <form action="/search" method="get">
+              <input type="text" name="query" />
+            </form>
+          </div>
+          <div id="header-notification">
+            <img
+              class="header-icons"
+              src="./assets/dashboard-icons/notifications-alert-svgrepo-com.svg"
+              alt="notification-icon"
+            />
+            <img
+              class="avatar-icons"
+              src="./assets/avatar-icons/1.png"
+              alt="avatar-1"
+            />
+            <div>Franco Vacirca</div>
+          </div>
         </div>
         <div id="header-2">
-          <img
-            class="big-avatar-icon"
-            src="./assets/avatar-icons/1.png"
-            alt="avatar-1"
-          />
-          <div id="hi-there">Hi there,</div>
-          <div id="username-name">Franco Vacirca (@franv)</div>
-          <div class="header-buttons">New</div>
-          <div class="header-buttons">Upload</div>
-          <div class="header-buttons">Share</div>
+          <div id="header-user-info">
+            <img
+              class="big-avatar-icon"
+              src="./assets/avatar-icons/1.png"
+              alt="avatar-1"
+            />
+            <div id="vertical-stack">
+              <div>Hi there,</div>
+              <hr id="spacer" />
+              <div>Franco Vacirca (@franv)</div>
+            </div>
+          </div>
+          <div id="header-buttons">
+            <div class="header-buttons">New</div>
+            <div class="header-buttons">Upload</div>
+            <div class="header-buttons">Share</div>
+          </div>
         </div>
       </section>
       <section id="main-content">
         <div id="your-projects">
-          <div>Your Projects</div>
+          <div id="title-your-projects">Your Projects</div>
           <div class="projects">
             <div>Super Cool Project</div>
             <div class="lorem">
@@ -264,75 +294,71 @@
             />
           </div>
         </div>
-        <div id="announcements-trending">
-          <div id="announcements">
-            <div>Announcement</div>
-            <div class="announcement">
-              <div>Site Maintenance</div>
-              <div class="lorem">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                adipisci iusto dolorum? Veritatis aperiam a accusantium beatae
-                eos optio. Veritatis rerum saepe incidunt ut doloremque, sunt
-                soluta sequi ex corrupti.
-              </div>
-            </div>
-            <div class="announcement">
-              <div>Community Share Day</div>
-              <div class="lorem">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reprehenderit, eaque cum culpa dicta beatae provident nulla
-                magni rem ab repellat eveniet totam voluptates illo fuga id
-                maxime sequi cumque ducimus?
-              </div>
-            </div>
-            <div class="announcement">
-              <div>Upload Privacy Policy</div>
-              <div class="lorem">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dolores, perspiciatis sint voluptatibus quam nemo explicabo
-                inventore ratione saepe officia temporibus! Repellat similique
-                sequi modi qui quidem quisquam vitae aliquid reprehenderit.
-              </div>
+        <div>Announcement</div>
+        <div id="announcements">
+          <div>Site Maintenance</div>
+          <div class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+            adipisci iusto dolorum? Veritatis aperiam a accusantium beatae eos
+            optio. Veritatis rerum saepe incidunt ut doloremque, sunt soluta
+            sequi ex corrupti.
+          </div>
+          <hr />
+          <div>Community Share Day</div>
+          <div class="lorem">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Reprehenderit, eaque cum culpa dicta beatae provident nulla magni
+            rem ab repellat eveniet totam voluptates illo fuga id maxime sequi
+            cumque ducimus?
+          </div>
+          <hr />
+          <div class="announcement">
+            <div>Upload Privacy Policy</div>
+            <div class="lorem">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+              perspiciatis sint voluptatibus quam nemo explicabo inventore
+              ratione saepe officia temporibus! Repellat similique sequi modi
+              qui quidem quisquam vitae aliquid reprehenderit.
             </div>
           </div>
-          <div id="trending">
-            <div>trending</div>
-            <div class="trending-user">
-              <img
-                class="avatar-icons"
-                src="./assets/avatar-icons/2.png"
-                alt="avatar-icon"
-              />
-              <div>@tegan</div>
-              <div class="project-title">World Peace Builder</div>
-            </div>
-            <div class="trending-user">
-              <img
-                class="avatar-icons"
-                src="./assets/avatar-icons/1.png"
-                alt="avatar-icon"
-              />
-              <div>@francov</div>
-              <div class="project-title">Super Cool Project</div>
-            </div>
-            <div class="trending-user">
-              <img
-                class="avatar-icons"
-                src="./assets/avatar-icons/3.png"
-                alt="avatar-icon"
-              />
-              <div>@kendall</div>
-              <div class="project-title">Life Changing App</div>
-            </div>
-            <div class="trending-user">
-              <img
-                class="avatar-icons"
-                src="./assets/avatar-icons/4.png"
-                alt="avatar-icon"
-              />
-              <div>@alex</div>
-              <div class="project-title">No Traffic Maker</div>
-            </div>
+        </div>
+        <div id="trending">
+          <div>trending</div>
+          <div class="trending-user">
+            <img
+              class="avatar-icons"
+              src="./assets/avatar-icons/2.png"
+              alt="avatar-icon"
+            />
+            <div>@tegan</div>
+            <div class="project-title">World Peace Builder</div>
+          </div>
+          <div class="trending-user">
+            <img
+              class="avatar-icons"
+              src="./assets/avatar-icons/1.png"
+              alt="avatar-icon"
+            />
+            <div>@francov</div>
+            <div class="project-title">Super Cool Project</div>
+          </div>
+          <div class="trending-user">
+            <img
+              class="avatar-icons"
+              src="./assets/avatar-icons/3.png"
+              alt="avatar-icon"
+            />
+            <div>@kendall</div>
+            <div class="project-title">Life Changing App</div>
+          </div>
+          <div class="trending-user">
+            <img
+              class="avatar-icons"
+              src="./assets/avatar-icons/4.png"
+              alt="avatar-icon"
+            />
+            <div>@alex</div>
+            <div class="project-title">No Traffic Maker</div>
           </div>
         </div>
       </section>
