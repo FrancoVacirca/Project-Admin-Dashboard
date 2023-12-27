@@ -149,8 +149,9 @@ table {
 }
 
 .avatar-icons {
-    max-height: 2.5rem;
-    max-width: 2.5rem;
+    max-height: 3rem;
+    max-width: 3rem;
+    margin-right: 1rem;
     border-radius: 50%;
 }
 
@@ -187,6 +188,11 @@ form {
     font-size: smaller;
     padding: 0.5rem;
     padding-bottom: 1rem;
+}
+
+.lorem,
+.announcement-lorem {
+    color: rgb(78, 78, 78);
 }
 
 body {
@@ -346,11 +352,14 @@ input#search-field {
     gap: 1rem;
     padding-left: 1rem;
     padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .projects {
     font-size: 0.5rem;
     padding: 1rem;
+    border-radius: 5px;
+    border-left: #fde65c 0.5rem solid;
 }
 
 .projects-title {
@@ -392,7 +401,6 @@ input#search-field {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    /* Grow to occupy available space */
 }
 
 .announcement,
@@ -422,6 +430,7 @@ input#search-field {
     grid-column: 2 / 3;
     grid-template-rows: auto 1fr 1fr;
     grid-auto-rows: 1fr;
+    padding-bottom: 2rem;
 }
 
 #trending-title {
@@ -431,4 +440,14 @@ input#search-field {
 .trending-user {
     display: flex;
     flex-direction: row;
+    padding-top: 2rem;
+}
+
+.username-trending {
+    font-size: large;
+}
+
+.project-trending {
+    font-size: medium;
+    color: rgb(78, 78, 78);
 }
