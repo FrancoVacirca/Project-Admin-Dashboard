@@ -221,7 +221,7 @@ div {
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: auto 1fr;
 }
 
 #sidebar {
@@ -231,6 +231,7 @@ div {
     color: #ffffff;
     font-size: 0.85rem;
     font-weight: bolder;
+    min-width: 217.4px;
 }
 
 #sticky-sidebar {
@@ -262,6 +263,9 @@ div {
 
 #header {
     font-weight: 500;
+    grid-row: 1;
+    display: grid;
+    max-height: 166px;
 }
 
 #header-1 {
@@ -339,8 +343,6 @@ input#search-field {
     display: grid;
     grid-template-columns: 3fr 1fr;
     /* Adjust the grid layout */
-    grid-template-rows: 1fr;
-    /* Remove the unnecessary row definition */
 }
 
 #your-projects {
